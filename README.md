@@ -19,4 +19,4 @@
 参考：[代码地址](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-02/index.html)
 
 任务三：[零基础JavaScript编码（三）](http://ife.baidu.com/course/detail/id/98)
-参考：[参考地址](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-03/index.html)
+参考：[代码地址](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-03/index.html)
