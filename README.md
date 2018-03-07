@@ -10,3 +10,13 @@
 - 04，**百度糯米前端技术学院**：百度糯米前端课程，包含 Node、CSS3、VUE。
 - 05，**商业平台学院**：综合学习前端知识。
 
+### 斌斌学院
+
+任务一：[零基础JavaScript编码（一）](http://ife.baidu.com/course/detail/id/93)
+参考：[代码地址](https://github.com/Psilocine/learngit/blob/master/ife/binbin/task01/task01.html)
+
+任务二：[零基础JavaScript编码（二）](http://ife.baidu.com/course/detail/id/91) 
+参考：[代码地址](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-02/index.html)
+
+任务三：[零基础JavaScript编码（三）](http://ife.baidu.com/course/detail/id/98)
+参考：[参考地址](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-03/index.html)
