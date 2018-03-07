@@ -37,7 +37,7 @@
       // 创建一个空白节点 fragment，先让 li 子节点添加进去，在统一更新到 DOM，减少最小现场更新。
       var fragment = document.createDocumentFragment();
       // 这里简单处理数子转换，严谨转换可以使用 nzh 库。
-      var index = '一二三四五六七八九';
+      var indexArr = ['一','二','三','四','五','六','七','八','九'];
       
       var newData = aqiData.filter(function(item) {
         return item[1] >= 60;
@@ -49,7 +49,7 @@
       
       for (var i = 0; i< newData.length; i++) {
         var li = document.createElement('li')
-        li.innerHTML += '第' + index[i] + '名: ' + newData[i][0] + ',' + newData[i][1];
+        li.innerHTML += '第' + indexArr[i] + '名: ' + newData[i][0] + ', ' + newData[i][1];
         fragment.appendChild(li);
       }
 
