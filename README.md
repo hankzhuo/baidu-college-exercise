@@ -6,7 +6,7 @@
 
 - 01，**小薇学院**：IFE 历史精选课程，主要是入门 HTML/CSS 基础。
 - 02，**斌斌学院**：IFE 历史精选课程，主要是学习 JavaScript。
-- 03，**耀耀学院**：百度糯米前端课程，包含 Node、CSS3、VUE。
+- 03，**耀耀学院**：IFE 历史精选课程，综合实战。
 - 04，**百度糯米前端技术学院**：百度糯米前端课程，包含 Node、CSS3、VUE。
 - 05，**商业平台学院**：综合学习前端知识。
 
@@ -24,3 +24,7 @@
 任务三：[零基础JavaScript编码（三）](http://ife.baidu.com/course/detail/id/98)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-03/index.html)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-03/index.html)
+
+任务四：[基础JavaScript练习（一）](http://ife.baidu.com/course/detail/id/103)
+代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-04/index.html)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-04/index.html)
