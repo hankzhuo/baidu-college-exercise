@@ -27,4 +27,8 @@
 
 任务四：[基础JavaScript练习（一）](http://ife.baidu.com/course/detail/id/103)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-04/index.html)
-效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-04/index.html)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-04)
+
+任务五：[基础JavaScript练习（二）](http://ife.baidu.com/course/detail/id/105)
+代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-05/index.html)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-05)
