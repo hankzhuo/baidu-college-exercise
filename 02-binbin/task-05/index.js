@@ -88,14 +88,23 @@
       list.removeChild(element);
     };
 
+    var getIndex = function(target) {
+      var spans = list.getElementsByTagName("span");
+      for (var i = 0; i < spans.length; i++) {
+        if (spans[i] == target) {
+          return i;
+        }
+      }
+    }
+
     // 删除任何一个元素，使用事件代理
     var deleteAnyChild = function(e) {
       var e = event || window.event;
-      deleteElementAlert(e.target);
-      // var spans = list.getElementsByTagName('span')
-      // console.log(spans)
+      var target = e.target || e.srcElement;
 
-      list.removeChild(e.target);
+      deleteElementAlert(target);
+      arr.splice(getIndex(target),1);
+      list.removeChild(target);
     }
 
     var sortAppend = function() {
