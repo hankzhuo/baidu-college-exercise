@@ -101,10 +101,14 @@
     var deleteAnyChild = function(e) {
       var e = event || window.event;
       var target = e.target || e.srcElement;
-
-      deleteElementAlert(target);
-      arr.splice(getIndex(target),1);
-      list.removeChild(target);
+      if (list.childElementCount == 0) {
+        return false;
+      }
+      if (target !== e.currentTarget) {
+       deleteElementAlert(target);
+       arr.splice(getIndex(target), 1);
+       list.removeChild(target); 
+     }
     }
 
     var sortAppend = function() {
