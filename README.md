@@ -44,4 +44,4 @@
 
 任务七：[JavaScript和树（一）](http://ife.baidu.com/course/detail/id/108)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-07)
-效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-07/index.html)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-07)
