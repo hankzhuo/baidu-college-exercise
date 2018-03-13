@@ -1,5 +1,3 @@
-# baidu-college-exercise
-
 <div align="center">
 <img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" >
  </div>
