@@ -1,6 +1,11 @@
 # baidu-college-exercise
 
-题目均来自于百度前端技术学院，有些题目非常不错，非常适合练一练，对个人的基础有一定巩固作用。
+<div align="center">
+<img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" >
+ </div>
+
+题目均来自于百度前端技术学院，有些题目非常不错，非常适合练一练，对个人基础有一定提
+升作用。
 
 ## 学院分类
 
@@ -33,6 +38,6 @@
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-05)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-05/index.html)
 
-任务五：[基础JavaScript练习（三）](http://ife.baidu.com/course/detail/id/107)
+任务六：[基础JavaScript练习（三）](http://ife.baidu.com/course/detail/id/107)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-06)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-06/index.html)
