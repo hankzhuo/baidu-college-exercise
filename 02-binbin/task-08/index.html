@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript和树（二）</title>
+</head>
+<style>
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  width: 730px;
+  margin: 25px auto;
+}
+.layer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding: 15px 10px;
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.layer_1 {
+  height: 200px; 
+}
+.layer_2 {
+  height: 160px; 
+}
+.layer_3 {
+  height: 120px;
+}
+.last-child {
+  width: 50px;
+  padding: 15px 10px;
+  margin: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.btns {
+  margin: 50px auto;
+  width: 760px;
+  display: flex;
+  justify-content: space-around;
+}
+input[type="button"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer
+}
+input[type="button"]:hover {
+  background-color: #c5e1ec;
+} 
+input[type="button"]:focus {
+  outline: none;
+}
+</style>
+<body>
+<!-- 暂时放前面，后面再优化 -->
+<script src="./index.js" defer></script>
+<div class="btns">
+  <input type="button" id="deep-traverse" value="深度优先遍历">
+  <input type="button" id="range-traverse" value="广度优先遍历">
+  <input type="text" name="input" id="input-number" placeholder="请输入数字">
+  <input type="button" id="deep-search-btn" value="深度优先查询">
+  <input type="button" id="range-traverse-btn" value="广度优先查询">
+</div>
+  <div id="wrapper">1
+    <div class="layer_1 layer">2
+      <div class="layer_2 layer">5
+        <div class="layer_3 layer">11</div>
+        <div class="layer_3 layer">12</div>
+        <div class="layer_3 layer">13</div>
+      </div>
+    </div>
+    <div class="layer_1 layer">3
+      <div class="layer_2 layer">6</div>
+      <div class="layer_2 layer">7</div>
+      <div class="layer_2 layer">8</div>
+      <div class="layer_2 layer">9</div>
+      <div class="layer_2 layer">10</div>
+    </div>
+    <div class="layer_1 last-child">4</div>
+  </div>
+</body>
+</html>

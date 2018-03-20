@@ -7,7 +7,7 @@
   var nodeArr = []; // 把子节点放在一个数组里
   var animation = false; // 加一个状态锁，防止短时间内重复点击
 
-  // 先序遍历
+  // 中序遍历
   var inOrderTraverseNode = function(node, callback) {
     if (node !== null) {
       inOrderTraverseNode(node.firstElementChild, callback); // 先访问左树
