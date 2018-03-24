@@ -3,9 +3,11 @@
     deepTraverseBtn = document.getElementById("deep-traverse"),
     rangeTraverseBtn = document.getElementById("range-traverse"),
     deepSearchBtn = document.getElementById("deep-search-btn"),
-    input = document.getElementById("input-number"),
-    rangeSearchBtn = document.getElementById("range-traverse-btn");
-  
+    rangeSearchBtn = document.getElementById("range-traverse-btn"),
+    deleteBtn = document.getElementById('delete-btn'),
+    addBtn = document.getElementById('add-btn'),
+    input = document.getElementById("input-number");
+
   var nodeArr = []; // 把子节点放在一个数组里
   var animation = false; // 加一个状态锁，防止短时间内重复点击
   var index = 0;
@@ -27,9 +29,7 @@
       callback(node);
       rangeTraverseNode(node.nextElementSibling, callback);    
       node = nodeArr[index++];
-      if (node.firstElementChild) {
-        rangeTraverseNode(node.firstElementChild, callback);
-      }
+      rangeTraverseNode(node.firstElementChild, callback);
     }
   };
 
@@ -40,8 +40,8 @@
   // 监听input输入的值
   input.addEventListener("change", function() {
     text = this.value;
-  }, false);
-
+  }, false)
+    
   var render = function(text) {
     if (animation) {
       alert('动画还没执行完。。。');
@@ -61,14 +61,14 @@
         return false;
       }
       // 查询
-      if (text && nodeArr[i].firstChild.nodeValue.replace(/(^\s*)|(\s*$)/g, "") === text) {
+      if (nodeArr[i].firstChild.nodeValue.replace(/(^\s*)|(\s*$)/g, "") === text) {
         clearInterval(id);
         nodeArr[i - 1].style.backgroundColor = "#fff";
         nodeArr = [];
         animation = false;
         alert(text);
         return false;
-      } else if(text){
+      } else {
         if (i === (nodeArr.length - 1)) {
           clearInterval(id);
           alert('没有找到对应的内容');
@@ -83,7 +83,7 @@
       nodeArr[i].style.backgroundColor = "blue";
     }, 500);
   };
-  // 深度优先遍历
+  
   deepTraverseBtn.onclick = function() {
     if (!nodeArr.length) {
       nodeArr = [];
@@ -91,16 +91,15 @@
     deepTraverseNode(wrapper, pushNode);
     render();
   };
-  // 广度优先遍历
+
   rangeTraverseBtn.onclick = function() {
     if (!nodeArr.length) {
       nodeArr = [];
-      index = 0;
     }
     rangeTraverseNode(wrapper, pushNode);
     render();
   };
-  // 深度优先查询
+
   deepSearchBtn.onclick = function() {
     if (text !== '') {
       deepTraverseNode(wrapper, pushNode);
@@ -109,7 +108,7 @@
       alert('请输入字符')
     }
   };
-  // 广度优先查询
+
   rangeSearchBtn.onclick = function() {
     if (text !== '') {
       rangeTraverseNode(wrapper, pushNode);
@@ -117,5 +116,38 @@
     } else {
       alert("请输入字符");
     }
+  }
+
+  var setBG = function(target) {
+    target.style.backgroundColor = "#fff";
+  }
+
+  wrapper.onclick = function(e) {
+    var target = e.target || e.srcElement;
+    deepTraverseNode(wrapper, setBG);
+    target.style.backgroundColor = "red";
+
+    deleteBtn.onclick = function() {
+      deleteElement(target);
+    };
+
+    addBtn.onclick = function() {
+      if (text) {
+        addElement(target);
+      } else {
+        alert('请输入内容')
+      }
+    };
+  }
+
+  var deleteElement = function(target) {
+    target.parentElement.removeChild(target);
+  }
+
+  var addElement = function(target) {
+    var div = document.createElement('div');
+    div.className = 'layer'
+    div.innerHTML = text;
+    target.appendChild(div);
   }
 })()
