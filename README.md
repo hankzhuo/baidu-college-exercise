@@ -46,6 +46,10 @@
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-07)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-07)
 
-任务七：[JavaScript和树（二）](http://ife.baidu.com/course/detail/id/110)
+任务八：[JavaScript和树（二）](http://ife.baidu.com/course/detail/id/110)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-08)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-08)
+
+任务九：[JavaScript和树（三）](http://ife.baidu.com/course/detail/id/110)
+代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/blob/master/02-binbin/task-09)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-09)
