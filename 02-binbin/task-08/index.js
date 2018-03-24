@@ -42,7 +42,7 @@
     text = this.value;
   }, false);
 
-  var render = function(text) {
+  var render = function() {
     if (animation) {
       alert('动画还没执行完。。。');
       return false;
@@ -66,7 +66,7 @@
         nodeArr[i - 1].style.backgroundColor = "#fff";
         nodeArr = [];
         animation = false;
-        alert(text);
+        alert("查询到内容：", text);
         return false;
       } else if(text){
         if (i === (nodeArr.length - 1)) {
@@ -102,18 +102,18 @@
   };
   // 深度优先查询
   deepSearchBtn.onclick = function() {
-    if (text !== '') {
+    if (text) {
       deepTraverseNode(wrapper, pushNode);
-      render(text);
+      render();
     } else {
       alert('请输入字符')
     }
   };
   // 广度优先查询
   rangeSearchBtn.onclick = function() {
-    if (text !== '') {
+    if (text) {
       rangeTraverseNode(wrapper, pushNode);
-      render(text);
+      render();
     } else {
       alert("请输入字符");
     }

@@ -42,7 +42,7 @@
     text = this.value;
   }, false)
     
-  var render = function(text) {
+  var render = function() {
     if (animation) {
       alert('动画还没执行完。。。');
       return false;
@@ -61,14 +61,14 @@
         return false;
       }
       // 查询
-      if (nodeArr[i].firstChild.nodeValue.replace(/(^\s*)|(\s*$)/g, "") === text) {
+      if (text && nodeArr[i].firstChild.nodeValue.replace(/(^\s*)|(\s*$)/g, "") === text) {
         clearInterval(id);
         nodeArr[i - 1].style.backgroundColor = "#fff";
         nodeArr = [];
         animation = false;
-        alert(text);
+        alert('查询到内容：',text);
         return false;
-      } else {
+      } else if (text) {
         if (i === (nodeArr.length - 1)) {
           clearInterval(id);
           alert('没有找到对应的内容');
@@ -95,13 +95,14 @@
   rangeTraverseBtn.onclick = function() {
     if (!nodeArr.length) {
       nodeArr = [];
+      index = 0;
     }
     rangeTraverseNode(wrapper, pushNode);
     render();
   };
 
   deepSearchBtn.onclick = function() {
-    if (text !== '') {
+    if (text) {
       deepTraverseNode(wrapper, pushNode);
       render(text);
     } else {
@@ -110,7 +111,7 @@
   };
 
   rangeSearchBtn.onclick = function() {
-    if (text !== '') {
+    if (text) {
       rangeTraverseNode(wrapper, pushNode);
       render(text);
     } else {
