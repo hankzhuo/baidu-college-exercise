@@ -1,6 +1,6 @@
 <div align="center">
-<img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" >
- </div>
+  <img src="http://ife.baidu.com/2017/asset/common/img/logo_a3b4064.png" >
+</div>
 
 ---
 
@@ -13,7 +13,6 @@
 - 02，**斌斌学院**：IFE 历史精选课程，主要是学习 JavaScript。
 - 03，**耀耀学院**：IFE 历史精选课程，综合实战。
 - 04，**百度糯米前端技术学院**：百度糯米前端课程，包含 Node、CSS3、VUE。
-- 05，**商业平台学院**：综合学习前端知识。
 
 ### 斌斌学院
 
