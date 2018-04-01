@@ -1,7 +1,7 @@
 window.onload = function() {
-  var label = document.getElementsByClassName("verify")[0],
-      button = label.lastElementChild,
-      input = label.firstElementChild;
+  var verify = document.getElementsByClassName("verify")[0],
+    button = verify.lastElementChild,
+    input = verify.getElementsByTagName('input')[0];
   var placehold = document.getElementById("placehold");
 
   var getLength = function(val) {
@@ -26,7 +26,8 @@ window.onload = function() {
     }
 
     if (getLength(input.value) > 16 || getLength(input.value) < 4) {
-      placehold.innerHTML = "必填，长度为4~16个字符";
+      placehold.innerHTML = "长度为4~16个字符";
+      input.style.borderColor = "red";
       placehold.style.color = "red";
       return;
     }

@@ -15,7 +15,7 @@
 - 04，**百度糯米前端技术学院**：百度糯米前端课程，包含 Node、CSS3、VUE。
 
 ### 小薇学院
-  本系列主要是 HTML、CSS 入门基础，需要练习的伙伴 [点击地址](http://ife.baidu.com/college/detail/id/9)
+  本系列主要是 HTML、CSS 入门基础，需要练习的伙伴 [传送地址](http://ife.baidu.com/college/detail/id/9)
 
 ### 斌斌学院
 
@@ -61,3 +61,4 @@
 任务一：[表单（一）单个表单项的检验](http://ife.baidu.com/course/detail/id/97)
 代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/tree/master/03-yaoyao/task-01)
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/03-yaoyao/task-01/)
+

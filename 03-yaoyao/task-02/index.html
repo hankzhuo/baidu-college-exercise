@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单（二）多个表单项的检验</title>
+    <style>
+        .form {
+            margin: auto;
+            width: 600px;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 200px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        span {
+            display: block;
+            margin-left: 36px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #ccc;
+            opacity: 0;
+        }
+
+        .confirm-password label {
+            margin-left: -32px;
+        }
+
+        input[type="submit"] {
+            position: relative;
+            width: 50px;
+            left: 198px;
+            color: #fff;
+            background-color: #6a9af1;
+            border-width: 0;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <div class="name">
+            <label for="name">名称</label>
+            <input type="text">
+            <span>必填，长度为4~16个字符</span>
+        </div>
+        <div class="password">
+            <label for="password">密码</label>
+            <input type="password">
+            <span>输入密码</span>
+        </div>
+        <div class="confirm-password">
+            <label for="confirm-password">密码确认</label>
+            <input type="password">
+            <span>再次输入相同密码</span>
+        </div>
+        <div class="email">
+            <label for="email">邮箱</label>
+            <input type="email">
+            <span>输入正确的邮箱格式</span>
+        </div>
+        <div class="telephone">
+            <label for="telephone">手机</label>
+            <input type="number">
+            <span>请输入手机号</span>
+        </div>
+        <input type="submit" value="提交" class="submit">
+    </form>
+</body>
+<script src="./index.js"></script>
+
+</html>
