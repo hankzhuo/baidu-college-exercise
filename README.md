@@ -57,3 +57,7 @@
 效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/02-binbin/task-09)
 
 ### 耀耀学院
+
+任务一：[表单（一）单个表单项的检验](http://ife.baidu.com/course/detail/id/97)
+代码：[代码地址 ](https://github.com/hankzhuo/baidu-college-exercise/tree/master/03-yaoyao/task-01)
+效果：[在线Demo](https://hankzhuo.github.io/baidu-college-exercise/03-yaoyao/task-01/)
